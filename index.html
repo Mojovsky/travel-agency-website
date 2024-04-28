@@ -1,26 +1,37 @@
-<form>
-  <div>
-    <label for="destination">Destination</label>
-    <select name="destination">
-      <option value="Paris">Paris</option>
-      <option value="Tokyo">Tokyo</option>
-      <option value="Sydney">Sydney</option>
-      <option value="San Francisco">San Francisco</option>
-    </select>
-  </div>
-  <div>
-    <label for="date_from">From</label>
-    <input type="date" id="date_from" name="date_from" />
-  </div>
-  <div>
-    <label for="date_to">To</label>
-    <input type="date" id="date_to" name="date_to" />
-  </div>
-  <div>
-    <label for="guests">Guests</label>
-    <input type="number" id="guests" name="guests" />
-  </div>
-  <div>
-    <button type="submit">-&gt;</button>
-  </div>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form">
+      <div class="destination">
+        <label for="destination">Destination</label>
+        <select name="destination">
+          <option value="Paris">Paris</option>
+          <option value="Tokyo">Tokyo</option>
+          <option value="Sydney">Sydney</option>
+          <option value="San Francisco">San Francisco</option>
+        </select>
+      </div>
+      <div class="date_from">
+        <label for="date_from">From</label>
+        <input type="date" id="date_from" name="date_from" />
+      </div>
+      <div class="date_to">
+        <label for="date_to">To</label>
+        <input type="date" id="date_to" name="date_to" />
+      </div>
+      <div class="guests">
+        <label for="guests">Guests</label>
+        <input type="number" id="guests" name="guests" />
+      </div>
+      <div class="button">
+        <button type="submit">-&gt;</button>
+      </div>
+    </form>
+  </body>
+</html>
