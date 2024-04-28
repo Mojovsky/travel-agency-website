@@ -5,5 +5,13 @@
   padding-right: 0px;
 }
 
+.dates {
+  gap: 10px;
+}
+
+.container-md {
+  border: 3px solid red;
+}
+
 @media (min-width: 769px) {
 }
