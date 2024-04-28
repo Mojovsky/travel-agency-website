@@ -1,37 +1,9 @@
-/* Under 768px */
+/* Over 768px */
 
-.destination {
-  grid-area: destination;
-  border: 3px solid red;
-  place-self: center;
-}
-.date_from {
-  grid-area: date_from;
-  border: 3px solid red;
-  place-self: center;
-}
-.date_to {
-  grid-area: date_to;
-  border: 3px solid red;
-  place-self: center;
-}
-.guests {
-  grid-area: guests;
-  border: 3px solid red;
-  place-self: center;
-}
-.button {
-  grid-area: button;
-  border: 3px solid red;
-  display: block;
+#no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.form {
-  display: grid;
-  grid-template:
-    [row1-start] "destination destination" 50% [row1-end]
-    [row2-start] "date_from date_to" 50% [row2-end]
-    [row3-start] "guests guests" 50% [row3-end]
-    [row4-start] "button button" 50% [row4-end]
-    / 50% 50%;
+@media (min-width: 769px) {
 }
