@@ -1,17 +1,33 @@
-/* Over 768px */
-
 #no-padding {
   padding-left: 0px;
   padding-right: 0px;
 }
 
+.row {
+  margin: 1rem;
+}
+
+.container {
+  margin-top: 1rem;
+}
+
 .dates {
-  gap: 10px;
+  gap: 1rem;
 }
 
-.container-md {
-  border: 3px solid red;
+@media (max-width: 576px) {
+  .container {
+    padding: 0 2rem !important;
+  }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+  /* Target devices wider than 768px */
+  .container {
+    display: flex;
+  }
+
+  .container > .row {
+    margin: 0.25rem;
+  }
 }
