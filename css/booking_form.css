@@ -1,0 +1,56 @@
+.booking_form > * {
+  margin: 1rem;
+}
+
+.date_container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.date {
+  min-width: 47%;
+}
+
+.button_area {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #fec107;
+  border: 3px solid #fec107;
+  border-radius: 20px !important;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Target devices wider than 768px */
+
+  .booking_form {
+    display: flex;
+  }
+
+  .booking_form > * {
+    flex-grow: 1;
+  }
+
+  .guests {
+    max-width: 10%;
+  }
+
+  .button_area {
+    justify-content: flex-end;
+    min-width: 3rem;
+    max-width: 6rem;
+  }
+
+  button {
+    min-height: 65%;
+  }
+}
