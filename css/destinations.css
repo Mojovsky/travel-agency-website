@@ -1,0 +1,34 @@
+.destinations {
+  padding: 3rem 0;
+}
+
+.destination_photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.destination_card > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.destination_card {
+  position: relative;
+  overflow: hidden;
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.city {
+  bottom: 40px;
+}
