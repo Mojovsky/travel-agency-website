@@ -7,7 +7,10 @@ footer {
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
-  text-decoration: underline;
+}
+
+.links a {
+  color: black;
 }
 
 .email_field {
@@ -20,4 +23,14 @@ footer {
   color: white;
   border-radius: 5px;
   min-width: 30%;
+}
+
+@media (min-width: 768px) {
+  /* Target devices wider than 768px */
+  footer {
+    padding: 3rem 15%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
 }
