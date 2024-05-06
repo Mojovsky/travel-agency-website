@@ -16,22 +16,31 @@
       href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link href="./css/general.css" rel="stylesheet" type="text/css" />
     <link href="./css/header.css" rel="stylesheet" type="text/css" />
     <link href="./css/destinations.css" rel="stylesheet" type="text/css" />
     <link href="./css/footer.css" rel="stylesheet" type="text/css" />
-    <link href="css/booking_form.css" rel="stylesheet" type="text/css" />
+    <link href="./css/booking_form.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
-      <div>
-        <!-- Search -->
-        <img src="./icons/globe-white.svg" alt="Logo" />
+      <nav>
         <div>
-          <img src="./icons/three-bars-white.svg" alt="Menu" />
+          <img src="./icons/search-white.svg" alt="Search" class="icon" />
+          Search
         </div>
-      </div>
-      <div>
-        <div>Year long travel</div>
+        <img src="./icons/globe-white.svg" alt="Logo" class="icon" id="home_icon" />
+        <div>
+          <img src="./icons/three-bars-white.svg" alt="Menu" class="icon" />
+        </div>
+      </nav>
+      <hr>
+      <div class="booking">
+        <div><b>YEAR LONG TRAVEL</b></div>
         <h1>
           Book your next<br />
           destination
@@ -77,35 +86,101 @@
             />
           </div>
           <div class="button_area">
-            <button type="submit">-&gt;</button>
+            <button type="submit"><img src="./icons/arrow-right.svg"></button>
           </div>
         </form>
       </div>
     </header>
-    <section>
+    <section class="destinations">
       <h2>Destinations</h2>
       <div>
         <p>
           Lorem ipsum dolor sit amet, adventure travel mountains, beach resorts
           and cultural experiences await. Pack your bags and get ready to
-          explore the world! From bustling cities to tranquil countryside
+          <b>explore the world</b>! From bustling cities to tranquil countryside
           getaways, there's a destination for every type of traveler.
         </p>
-        <!-- remaining text -->
+        <p>
+          The world is a vast and wondrous place, brimming with hidden gems and
+          captivating cultures waiting to be discovered. Do you dream of scaling
+          snow-capped mountains, basking on pristine beaches, or wandering
+          through ancient cities steeped in history? Perhaps you crave the
+          thrill of encountering exotic wildlife or the serenity of secluded
+          landscapes. Whatever your travel desires, we can help you turn them
+          into reality.
+        </p>
+        <p>
+          We're passionate about travel and committed to crafting <b>unforgettable
+          experiences</b> for our clients. We don't just book vacations; we design
+          journeys that ignite your curiosity, broaden your horizons, and leave
+          you with memories that will last a lifetime. So, pack your bags,
+          embrace your sense of adventure, and let us guide you to the
+          destination of your dreams!
+        </p>
       </div>
-      <div>
-        <!-- Destinations -->
+      <div class="destination_photos">
+        <div class="destination_card">
+          <img src="./images/destinations/paris.jpg" alt="Destination Paris" />
+          <div class="caption">
+            <p class="city">Paris</p>
+            <p class="country">France</p>
+          </div>
+        </div>
+        <div class="destination_card">
+          <img
+            src="./images/destinations/san-francisco.jpg"
+            alt="Destination San Francisco"
+          />
+          <div class="caption">
+            <p class="city">San Francisco</p>
+            <p class="country">United States</p>
+        </div>
+        </div>
+        <div class="destination_card">
+          <img
+            src="./images/destinations/sydney.jpg"
+            alt="Destination Sydney"
+          />
+          <div class="caption">
+            <p class="city">Sydney</p>
+            <p class="country">Australia</p>
+          </div>
+        </div>
+        <div class="destination_card">
+          <img src="./images/destinations/tokyo.jpg" alt="Destination Tokyo" />
+          <div class="caption">
+          <p class="city">Tokyo</p>
+          <p class="country">Japan</p>
+        </div>
       </div>
     </section>
     <footer>
-      <!-- links -->
-      <!-- newsletter form -->
+      <h2>Links</h2>
+      <div class="links">
+        <a>Home</a>
+        <a>Destinations</a>
+        <a>About</a>
+        <a>Contact</a>
+      </div>
       <div>
         <h3>Newsletter</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
           euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
         </p>
+        <form class="newsletter_form">
+          <div class="email_field">
+            <input
+              type="email"
+              class="form-control"
+              id="email_field"
+              name="email"
+            />
+            <button type="submit">
+              Subscribe
+              <img src="./icons/arrow-right-white.svg" alt="Subscribe icon"></button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
