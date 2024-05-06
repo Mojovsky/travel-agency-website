@@ -5,14 +5,24 @@ header {
   color: white;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: 700;
+nav a {
+  display: none;
+  text-decoration: none;
+  color: white;
+}
+
+.nav_search {
+  display: flex;
 }
 
 .booking {
@@ -27,4 +37,34 @@ h1 {
 
 #home_icon {
   margin-left: -50px;
+}
+
+@media (min-width: 768px) {
+  /* Target devices wider than 768px */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 80vh;
+    padding: 3rem 15%;
+  }
+
+  hr {
+    position: relative;
+    top: -27rem;
+  }
+
+  .nav_links,
+  .nav_links a {
+    display: flex;
+    gap: 1rem;
+  }
+
+  #burger_btn {
+    display: none;
+  }
+
+  #home_icon {
+    margin-left: 120px;
+  }
 }
