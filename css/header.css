@@ -10,12 +10,12 @@ h1 {
   font-weight: 700;
 }
 
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
 }
 
-nav a {
+.navbar a {
   display: none;
   text-decoration: none;
   color: white;
@@ -36,7 +36,7 @@ nav a {
 }
 
 #home_icon {
-  margin-left: -50px;
+  margin-left: -35px;
 }
 
 @media (min-width: 768px) {
@@ -50,8 +50,7 @@ nav a {
   }
 
   hr {
-    position: relative;
-    top: -27rem;
+    margin: 0;
   }
 
   .nav_links,
