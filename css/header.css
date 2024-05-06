@@ -1,0 +1,10 @@
+header {
+  background: url("/images/header.jpg") no-repeat top/cover;
+  min-height: 25vh;
+  padding: 2rem 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
