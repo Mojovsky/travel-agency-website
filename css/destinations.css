@@ -44,7 +44,7 @@
 }
 
 .city {
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", sans-serif;
   font-size: 30px;
   font-weight: bold;
   margin: auto;
@@ -53,4 +53,24 @@
 .country {
   color: rgb(202, 202, 202);
   font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 768px) {
+  /* Target devices wider than 768px */
+  .destinations {
+    padding: 3rem 15%;
+  }
+
+  .destinations_text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .destination_photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
 }
