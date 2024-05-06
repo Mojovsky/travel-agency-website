@@ -2,9 +2,29 @@ header {
   background: url("/images/header.jpg") no-repeat top/cover;
   min-height: 25vh;
   padding: 2rem 1rem;
+  color: white;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.booking {
+  margin-top: 6rem;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  min-width: 2rem;
+}
+
+#home_icon {
+  margin-left: -50px;
 }
