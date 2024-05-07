@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel agency: Homepage</title>
+    <meta name="description" content="Travel agency: Homepage" />
+    <meta name="author" content="You" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./css/header.css" rel="stylesheet" type="text/css" />
+    <link href="./css/destinations.css" rel="stylesheet" type="text/css" />
+    <link href="./css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="./css/booking_form.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="nav_search">
+            <img src="./icons/search-white.svg" alt="Search" class="icon" />
+            <div>Search</div>
+          </div>
+          <div>
+            <img
+              src="./icons/globe-white.svg"
+              alt="Logo"
+              class="icon"
+              id="home_icon"
+            />
+          </div>
+          <div class="nav_links">
+            <img
+              src="./icons/three-bars-white.svg"
+              alt="Menu"
+              class="icon"
+              id="burger_btn"
+            />
+            <a href="#">Destinations</a>
+            <a href="#">Contact Form</a>
+          </div>
+        </div>
+        <hr />
+      </nav>
+      <div class="booking">
+        <div><b>YEAR LONG TRAVEL</b></div>
+        <h1>
+          Book your next<br />
+          destination
+        </h1>
+        <form class="booking_form">
+          <div>
+            <label for="destination">Destination</label>
+            <select name="destination" class="form-select">
+              <option value="Paris">Paris</option>
+            </select>
+          </div>
+          <div class="date_container">
+            <div class="date">
+              <label for="date_from">From</label>
+              <input
+                type="date"
+                class="form-control"
+                id="date_from"
+                name="date_from"
+              />
+            </div>
+            <div class="date">
+              <label for="date_to">To</label>
+              <input
+                type="date"
+                class="form-control"
+                id="date_to"
+                name="date_to"
+              />
+            </div>
+          </div>
+          <div class="guests">
+            <label for="guests">Guests</label>
+            <input
+              type="number"
+              class="form-control"
+              id="guests"
+              name="guests"
+            />
+          </div>
+          <div class="button_area">
+            <button type="submit"><img src="./icons/arrow-right.svg" /></button>
+          </div>
+        </form>
+      </div>
+    </header>
+    <section class="info-container">
+      <h2>Paris</h2>
+      <div class="text-container">
+        <p>
+          Immerse yourself in the timeless romance and captivating energy of
+          Paris, the enchanting capital of France. Wander the cobbled streets of
+          charming neighborhoods like Montmartre, marveling at the architectural
+          wonder of the Sacré-Coeur Basilica. Cruise the Seine River, soaking in
+          breathtaking views of iconic landmarks like the Eiffel Tower and the
+          Louvre Museum. Indulge in world-renowned French cuisine, from delicate
+          pastries in charming cafes to Michelin-starred culinary masterpieces.
+          Paris is a feast for the senses, offering a vibrant blend of history,
+          art, culture, and delectable gastronomy.
+        </p>
+        <p>
+          Beyond its iconic sights, Paris pulsates with a magnetic energy. Lose
+          yourself in the bustling atmosphere of outdoor markets, browsing
+          unique artisanal finds. Embrace the bohemian spirit of the Left Bank,
+          where renowned cafes like Les Deux Magots and Café de Flore beckon
+          with their literary heritage. In the evenings, soak up the city's
+          vibrant nightlife, catching a captivating performance at the Moulin
+          Rouge or enjoying a jazz show in a hidden cellar bar. Paris offers an
+          unforgettable experience, leaving a lasting impression on every
+          visitor.
+        </p>
+        <p>
+          Whether you're a history buff, a hopeless romantic, or a passionate
+          gourmand, Paris has something to offer everyone. Explore our dedicated
+          Paris vacation page to discover a selection of curated itineraries,
+          charming accommodations, and exclusive local experiences that will
+          make your Parisian adventure truly unforgettable. Book your dream
+          Parisian escape today and let us guide you through the magic of the
+          City of Lights!
+        </p>
+      </div>
+      <div class="image-container">
+        <img />
+        <img />
+      </div>
+      <div class="button_area">
+        <button type="submit"><b>Back to Gallery</b></button>
+      </div>
+    </section>
+    <footer>
+      <div class="links">
+        <h2>Links</h2>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="newsletter">
+        <h3>Newsletter</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+        </p>
+        <form class="newsletter_form">
+          <div class="email_field">
+            <input
+              type="email"
+              class="form-control"
+              id="email_field"
+              name="email"
+            />
+            <button type="submit">
+              Subscribe
+              <img src="./icons/arrow-right-white.svg" alt="Subscribe icon" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
