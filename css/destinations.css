@@ -1,4 +1,4 @@
-.destinations {
+.gallery {
   padding: 3rem 1rem;
 }
 
@@ -29,6 +29,12 @@
     rgba(0, 0, 0, 0) 30%,
     rgba(0, 0, 0, 0.7) 100%
   );
+  transition: background-image 0.3s ease;
+}
+
+.destination-link:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
 .caption {
@@ -71,6 +77,12 @@
   .destination_photos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+
+  #gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
   }
 }
