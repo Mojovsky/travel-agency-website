@@ -1,5 +1,9 @@
-.gallery {
+section {
   padding: 3rem 1rem;
+}
+
+.destination_wrapper {
+  margin: 1rem 0;
 }
 
 .destination_photos {
@@ -63,8 +67,13 @@
 
 @media (min-width: 768px) {
   /* Target devices wider than 768px */
-  .destinations {
+  section {
     padding: 3rem 15%;
+  }
+
+  .destination_wrapper {
+    margin: 1rem 0;
+    display: flex;
   }
 
   .destinations_text {
@@ -84,5 +93,20 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1rem;
+  }
+
+  #destination_photo_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #destination_vertical_text {
+    display: inline-block;
+    max-width: 40%;
+    margin-right: 6rem;
+  }
+
+  #destination_vertical_button {
+    margin-top: 6rem;
+    min-width: 100%;
   }
 }
