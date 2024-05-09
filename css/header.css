@@ -10,6 +10,10 @@ h1 {
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -17,7 +21,6 @@ h1 {
 
 .navbar a {
   display: none;
-  text-decoration: none;
   color: white;
 }
 
