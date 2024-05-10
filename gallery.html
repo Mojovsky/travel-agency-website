@@ -36,21 +36,23 @@
             <img src="./icons/search-white.svg" alt="Search" class="icon" />
             <div>Search</div>
           </div>
-          <div>
-            <img
-              src="./icons/globe-white.svg"
-              alt="Logo"
-              class="icon"
-              id="home_icon"
-            />
-          </div>
+          <a href="index.html">
+            <div>
+              <img
+                src="./icons/globe-white.svg"
+                alt="Logo"
+                class="icon"
+                id="home_icon"
+              />
+            </div>
+          </a>
+          <img
+            src="./icons/three-bars-white.svg"
+            alt="Menu"
+            class="icon"
+            id="burger_btn"
+          />
           <div class="nav_links">
-            <img
-              src="./icons/three-bars-white.svg"
-              alt="Menu"
-              class="icon"
-              id="burger_btn"
-            />
             <a href="gallery.html">Destinations</a>
             <a href="contact-form.html">Contact Form</a>
           </div>
@@ -66,7 +68,7 @@
         <form class="booking_form">
           <div>
             <label for="destination">Destination</label>
-            <select name="destination" class="form-select">
+            <select name="destination" id="destination" class="form-select">
               <option value="Destination">Select Destination</option>
               <option value="London">London</option>
               <option value="Marrakesh">Marrakesh</option>
@@ -111,100 +113,107 @@
             />
           </div>
           <div class="button_area">
-            <button type="submit"><img src="./icons/arrow-right.svg" /></button>
+            <button type="submit">
+              <img src="./icons/arrow-right.svg" alt="arrow-right" />
+            </button>
           </div>
         </form>
       </div>
     </header>
     <section class="gallery">
       <h2>Explore the possibilities...</h2>
-      <br>
+      <br />
       <div class="destination_photos" id="gallery-photos">
-        <a class="destination-link" href="./tokyo.html" >
+        <a class="destination-link" href="./tokyo.html">
           <div class="destination_card">
-            <img src="./images/destinations/tokyo.jpg" />
+            <img src="./images/destinations/tokyo.jpg" alt="tokyo" />
             <div class="caption">
               <p class="city">Tokyo</p>
               <p class="country">Japan</p>
             </div>
           </div>
         </a>
-          <div class="destination_card">
-            <img src="./images/destinations/london.jpg" />
-            <div class="caption">
-              <p class="city">London</p>
-              <p class="country">England</p>
-            </div>
+        <div class="destination_card">
+          <img src="./images/destinations/london.jpg" alt="london" />
+          <div class="caption">
+            <p class="city">London</p>
+            <p class="country">England</p>
           </div>
-          <div class="destination_card">
-            <img src="./images/destinations/marrakesh.jpg" />
-            <div class="caption">
-              <p class="city">Marrakesh</p>
-              <p class="country">Morocco</p>
-            </div>
+        </div>
+        <div class="destination_card">
+          <img src="./images/destinations/marrakesh.jpg" alt="marrakesh" />
+          <div class="caption">
+            <p class="city">Marrakesh</p>
+            <p class="country">Morocco</p>
           </div>
-          <div class="destination_card">
-            <img src="./images/destinations/new-york.jpg" />
-            <div class="caption">
-              <p class="city">New York</p>
-              <p class="country">United States</p>
-            </div>
+        </div>
+        <div class="destination_card">
+          <img src="./images/destinations/new-york.jpg" alt="new-york" />
+          <div class="caption">
+            <p class="city">New York</p>
+            <p class="country">United States</p>
           </div>
-          <div class="destination_card">
-            <img src="./images/destinations/paris.jpg" />
-            <div class="caption">
-              <p class="city">Paris</p>
-              <p class="country">France</p>
-            </div>
+        </div>
+        <div class="destination_card">
+          <img src="./images/destinations/paris.jpg" alt="paris" />
+          <div class="caption">
+            <p class="city">Paris</p>
+            <p class="country">France</p>
           </div>
-          <div class="destination_card">
-            <img src="./images/destinations/petra.jpg" />
-            <div class="caption">
-              <p class="city">Petra</p>
-              <p class="country">Jordan</p>
-            </div>
+        </div>
+        <div class="destination_card">
+          <img src="./images/destinations/petra.jpg" alt="petra" />
+          <div class="caption">
+            <p class="city">Petra</p>
+            <p class="country">Jordan</p>
           </div>
-          <div class="destination_card">
-            <img src="./images/destinations/porto.jpg" />
-            <div class="caption">
-              <p class="city">Porto</p>
-              <p class="country">Portugal</p>
-            </div>
+        </div>
+        <div class="destination_card">
+          <img src="./images/destinations/porto.jpg" alt="porto" />
+          <div class="caption">
+            <p class="city">Porto</p>
+            <p class="country">Portugal</p>
           </div>
-          <div class="destination_card">
-            <img src="./images/destinations/rio-de-janeiro.jpg" />
-            <div class="caption">
-              <p class="city">Rio de Janeiro</p>
-              <p class="country">Brazil</p>
-            </div>
+        </div>
+        <div class="destination_card">
+          <img
+            src="./images/destinations/rio-de-janeiro.jpg"
+            alt="rio-de-janeiro"
+          />
+          <div class="caption">
+            <p class="city">Rio de Janeiro</p>
+            <p class="country">Brazil</p>
           </div>
-          <div class="destination_card">
-            <img src="./images/destinations/rome.jpg" />
-            <div class="caption">
-              <p class="city">Rome</p>
-              <p class="country">Italy</p>
-            </div>
+        </div>
+        <div class="destination_card">
+          <img src="./images/destinations/rome.jpg" alt="rome" />
+          <div class="caption">
+            <p class="city">Rome</p>
+            <p class="country">Italy</p>
           </div>
-          <div class="destination_card">
-            <img src="./images/destinations/san-francisco.jpg" />
-            <div class="caption">
-              <p class="city">San Francisco</p>
-              <p class="country">United States</p>
-            </div>
+        </div>
+        <div class="destination_card">
+          <img
+            src="./images/destinations/san-francisco.jpg"
+            alt="san-francisco"
+          />
+          <div class="caption">
+            <p class="city">San Francisco</p>
+            <p class="country">United States</p>
           </div>
-          <div class="destination_card">
-            <img src="./images/destinations/santorini.jpg" />
-            <div class="caption">
-              <p class="city">Santorini</p>
-              <p class="country">Greece</p>
-            </div>
+        </div>
+        <div class="destination_card">
+          <img src="./images/destinations/santorini.jpg" alt="santorini" />
+          <div class="caption">
+            <p class="city">Santorini</p>
+            <p class="country">Greece</p>
           </div>
-          <div class="destination_card">
-            <img src="./images/destinations/sydney.jpg" />
-            <div class="caption">
-              <p class="city">Sydney</p>
-              <p class="country">Australia</p>
-            </div>
+        </div>
+        <div class="destination_card">
+          <img src="./images/destinations/sydney.jpg" alt="sydney" />
+          <div class="caption">
+            <p class="city">Sydney</p>
+            <p class="country">Australia</p>
           </div>
         </div>
       </div>

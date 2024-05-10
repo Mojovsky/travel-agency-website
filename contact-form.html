@@ -37,21 +37,23 @@
             <img src="./icons/search-white.svg" alt="Search" class="icon" />
             <div>Search</div>
           </div>
-          <div>
-            <img
-              src="./icons/globe-white.svg"
-              alt="Logo"
-              class="icon"
-              id="home_icon"
-            />
-          </div>
+          <a href="index.html">
+            <div>
+              <img
+                src="./icons/globe-white.svg"
+                alt="Logo"
+                class="icon"
+                id="home_icon"
+              />
+            </div>
+          </a>
+          <img
+            src="./icons/three-bars-white.svg"
+            alt="Menu"
+            class="icon"
+            id="burger_btn"
+          />
           <div class="nav_links">
-            <img
-              src="./icons/three-bars-white.svg"
-              alt="Menu"
-              class="icon"
-              id="burger_btn"
-            />
             <a href="gallery.html">Destinations</a>
             <a href="contact-form.html">Contact Form</a>
           </div>
@@ -67,7 +69,7 @@
         <form class="booking_form">
           <div>
             <label for="destination">Destination</label>
-            <select name="destination" class="form-select">
+            <select name="destination" id="destination" class="form-select">
               <option value="Destination">Select Destination</option>
               <option value="London">London</option>
               <option value="Marrakesh">Marrakesh</option>
@@ -112,12 +114,68 @@
             />
           </div>
           <div class="button_area">
-            <button type="submit"><img src="./icons/arrow-right.svg" /></button>
+            <button type="submit">
+              <img src="./icons/arrow-right.svg" alt="arrow-right" />
+            </button>
           </div>
         </form>
       </div>
     </header>
-    <section class="contact-container"></section>
+    <section class="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contactForm" action="./contact-from-success.html">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" class="form-control" id="phone" name="phone" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="button_area">
+          <button type="button" onclick="submitForm()"><b>Submit</b></button>
+        </div>
+      </form>
+      <script>
+        function submitForm() {
+          let form = document.getElementById("contactForm");
+          if (form.checkValidity()) {
+            form.submit();
+          } else {
+            alert("Please fill out all required fields.");
+          }
+        }
+      </script>
+    </section>
     <footer>
       <div class="links">
         <h2>Links</h2>
