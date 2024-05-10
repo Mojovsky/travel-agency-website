@@ -6,8 +6,6 @@ This project is a simple, static website. I will go through the main aspects bel
 
 1. Header
 
-   Header consists of:
-
    - Search icon (inactive)
    - Home button (active)
    - Burger button (mobile view/inactive)
@@ -16,28 +14,20 @@ This project is a simple, static website. I will go through the main aspects bel
 
 2. Homepage
 
-   Homepage consists of:
-
    - 3 paragraphs of text
    - 4 destination cards (active, currently linking to gallery due to lack of individual pages)
 
 3. Gallery
 
-   Gallery consist of:
-
    - 12 destination cards (only the first active, leading to individual page)
 
 4. Individual destination page
-
-   Toyko page consists of:
 
    - 3 paragraphs of desciptive text
    - 6 destination cards
    - "Back to gallery" button
 
 5. Contact Form
-
-   Contact Form consist of:
 
    - Name field (required)
    - Email field (required)
@@ -50,8 +40,6 @@ This project is a simple, static website. I will go through the main aspects bel
    Confirms the successful submission and redirects to homepage automatically after 4 seconds
 
 7. Footer
-
-   Footer consists of:
 
    - Home link (active)
    - Destinations link (active)
