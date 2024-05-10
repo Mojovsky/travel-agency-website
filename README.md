@@ -10,7 +10,7 @@ This project is a simple, static website. I will go through the main aspects bel
    - Home button (active)
    - Burger button (mobile view/inactive)
    - Links to Destinations and Contact Form (desktop view/active)
-   - Booking Form (inactive, all basic functionalities)
+   - Booking Form (semi-active, all basic functionalities)
 
 2. Homepage
 
@@ -49,11 +49,11 @@ This project is a simple, static website. I will go through the main aspects bel
 
 ## Areas for improvement
 
-    Where to begin...
+Where to begin...
 
-    1. Modify header depending on the page (no need for booking for "Contact Form" etc.)
-    2. Make active burger button on mobile view
-    3. Tidy up code, make classes and styles more uniform (especially cards and buttons/links)
-    4. Make "About" link active and direct to a simple webpage
-    5. Make "Newsletter" subscription confirmation page (similar to contact form)
-    6. Make search icon semi-active (input field on hover)
+1. Modify header depending on the page (no need for booking for "Contact Form" etc.)
+2. Make active burger button on mobile view
+3. Tidy up code, make classes and styles more uniform (especially cards and buttons/links)
+4. Make "About" link active and direct to a simple webpage
+5. Make "Newsletter" subscription confirmation page (similar to contact form)
+6. Make search icon semi-active (input field on hover)
